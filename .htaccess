@@ -1,0 +1,65 @@
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Add trailing slash (match WordPress URL pattern)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ /$1/ [L,R=301]
+
+# Clean URLs: serve /path/index.html for /path/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.*)$ /$1/index.html [L]
+
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# Handle trailing slashes fallback
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)/$ $1.html [L]
+
+# Old flat converter URLs -> new nested URLs (301 redirects)
+RewriteRule ^jpg-to-png/?$ /image-converter/jpg-to-png/ [L,R=301]
+RewriteRule ^png-to-jpg/?$ /image-converter/png-to-jpg/ [L,R=301]
+RewriteRule ^webp-to-png/?$ /image-converter/webp-to-png/ [L,R=301]
+RewriteRule ^webp-to-jpg/?$ /image-converter/webp-to-jpg/ [L,R=301]
+RewriteRule ^png-to-webp/?$ /image-converter/png-to-webp/ [L,R=301]
+RewriteRule ^jpg-to-webp/?$ /image-converter/jpg-to-webp/ [L,R=301]
+RewriteRule ^heic-to-jpg/?$ /image-converter/heic-to-jpg/ [L,R=301]
+RewriteRule ^psd-to-png/?$ /image-converter/psd-to-png/ [L,R=301]
+RewriteRule ^svg-to-png/?$ /image-converter/svg-to-png/ [L,R=301]
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Custom 404
+ErrorDocument 404 /404.html
