@@ -1,0 +1,56 @@
+# Geotag Photo Online
+
+> Free online tools to geotag photos, check EXIF data, convert images, and more. No signup, no uploads — everything runs in your browser.
+
+Geotag Photo Online provides browser-based photo tools that process files entirely on the client side using JavaScript, the Canvas API, and open-source libraries. No images are ever uploaded to a server.
+
+## Tools
+
+### Photo Geotagging Tools
+
+- [Geotag Photos](https://geotagphotoonline.com/): Add GPS coordinates, keywords, and descriptions to your photos' EXIF data. Process up to 50 photos at once.
+- [Geo Tag Checker](https://geotagphotoonline.com/geo-tag-checker/): Check if your photo has GPS location data embedded in it.
+- [Find Photo Location](https://geotagphotoonline.com/find-photo-location/): Upload a geotagged photo to see where it was taken on an interactive map.
+
+### Metadata Tools
+
+- [EXIF Viewer](https://geotagphotoonline.com/exif-viewer/): View all EXIF metadata including camera model, date, GPS coordinates, exposure settings, and more.
+- [Remove EXIF Data](https://geotagphotoonline.com/remove-exif-data/): Strip all metadata from your photos for privacy protection before sharing online.
+
+### Image Converters
+
+- [Image Converter Hub](https://geotagphotoonline.com/image-converter/): Convert between JPG, PNG, WebP, HEIC, SVG, and PSD formats.
+- [PSD to PNG](https://geotagphotoonline.com/image-converter/psd-to-png/): Convert Photoshop PSD files to PNG with transparency preserved.
+- [JPG to PNG](https://geotagphotoonline.com/image-converter/jpg-to-png/): Convert JPG images to PNG format with lossless quality.
+- [PNG to JPG](https://geotagphotoonline.com/image-converter/png-to-jpg/): Convert PNG images to JPG with adjustable quality settings.
+- [WebP to PNG](https://geotagphotoonline.com/image-converter/webp-to-png/): Convert WebP images to PNG format for broader compatibility.
+- [WebP to JPG](https://geotagphotoonline.com/image-converter/webp-to-jpg/): Convert WebP images to JPG format.
+- [PNG to WebP](https://geotagphotoonline.com/image-converter/png-to-webp/): Convert PNG to WebP for smaller file sizes on the web.
+- [JPG to WebP](https://geotagphotoonline.com/image-converter/jpg-to-webp/): Convert JPG to WebP for optimized web performance.
+- [HEIC to JPG](https://geotagphotoonline.com/image-converter/heic-to-jpg/): Convert iPhone HEIC photos to JPG for universal compatibility.
+- [SVG to PNG](https://geotagphotoonline.com/image-converter/svg-to-png/): Convert SVG vector graphics to PNG raster images.
+
+### Image Editors
+
+- [Image Resizer](https://geotagphotoonline.com/image-resizer/): Resize images by dimensions or percentage while maintaining quality.
+- [Image Compressor](https://geotagphotoonline.com/image-compressor/): Reduce image file size with adjustable quality compression.
+
+## Blog
+
+- [How to Remove EXIF Data from Photos](https://geotagphotoonline.com/how-to-remove-exif-data-from-photos/): Step-by-step guide to removing EXIF metadata on iPhone, Android, Windows, and Mac.
+
+## About
+
+- [About Us](https://geotagphotoonline.com/about/): Built by Waqar Ahmad. Privacy-first, browser-based photo tools.
+- [Contact](https://geotagphotoonline.com/contact/): Get in touch at info@geotagphotoonline.com.
+- [Privacy Policy](https://geotagphotoonline.com/privacy-policy/)
+- [Terms & Conditions](https://geotagphotoonline.com/terms-conditions/)
+
+## Technical Details
+
+- All processing happens client-side using the Canvas API, OffscreenCanvas, and Web Workers
+- EXIF data: read with exifr, written with piexifjs
+- PSD files: parsed with ag-psd
+- HEIC files: decoded with heic2any
+- Geocoding: OpenStreetMap Nominatim API (the only network request any tool makes)
+- Built with Next.js, deployed as a static site
