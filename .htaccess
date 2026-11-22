@@ -3,6 +3,17 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Old flat converter URLs -> new nested URLs (301 redirects)
+RewriteRule ^jpg-to-png/?$ /image-converter/jpg-to-png/ [L,R=301]
+RewriteRule ^png-to-jpg/?$ /image-converter/png-to-jpg/ [L,R=301]
+RewriteRule ^webp-to-png/?$ /image-converter/webp-to-png/ [L,R=301]
+RewriteRule ^webp-to-jpg/?$ /image-converter/webp-to-jpg/ [L,R=301]
+RewriteRule ^png-to-webp/?$ /image-converter/png-to-webp/ [L,R=301]
+RewriteRule ^jpg-to-webp/?$ /image-converter/jpg-to-webp/ [L,R=301]
+RewriteRule ^heic-to-jpg/?$ /image-converter/heic-to-jpg/ [L,R=301]
+RewriteRule ^psd-to-png/?$ /image-converter/psd-to-png/ [L,R=301]
+RewriteRule ^svg-to-png/?$ /image-converter/svg-to-png/ [L,R=301]
+
 # Add trailing slash (match WordPress URL pattern)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !(.*)/$
@@ -24,17 +35,6 @@ RewriteRule ^(.+)$ $1.html [L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.+)/$ $1.html [L]
-
-# Old flat converter URLs -> new nested URLs (301 redirects)
-RewriteRule ^jpg-to-png/?$ /image-converter/jpg-to-png/ [L,R=301]
-RewriteRule ^png-to-jpg/?$ /image-converter/png-to-jpg/ [L,R=301]
-RewriteRule ^webp-to-png/?$ /image-converter/webp-to-png/ [L,R=301]
-RewriteRule ^webp-to-jpg/?$ /image-converter/webp-to-jpg/ [L,R=301]
-RewriteRule ^png-to-webp/?$ /image-converter/png-to-webp/ [L,R=301]
-RewriteRule ^jpg-to-webp/?$ /image-converter/jpg-to-webp/ [L,R=301]
-RewriteRule ^heic-to-jpg/?$ /image-converter/heic-to-jpg/ [L,R=301]
-RewriteRule ^psd-to-png/?$ /image-converter/psd-to-png/ [L,R=301]
-RewriteRule ^svg-to-png/?$ /image-converter/svg-to-png/ [L,R=301]
 
 # Compression
 <IfModule mod_deflate.c>
