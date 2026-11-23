@@ -3,16 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-User-Agent: GPTBot
-Disallow: /
-
-User-Agent: ChatGPT-User
-Disallow: /
-
-User-Agent: CCBot
-Disallow: /
-
-User-Agent: Google-Extended
-Disallow: /
-
 Sitemap: https://geotagphotoonline.com/sitemap.xml
