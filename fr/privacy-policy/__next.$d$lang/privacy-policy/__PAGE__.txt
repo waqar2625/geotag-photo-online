@@ -1,0 +1,26 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/1e8blic1djf2d.js"
+5:I[39756,["$4"],"default"]
+6:I[37457,["$4"],"default"]
+b:I[97367,["$4"],"OutletBoundary"]
+c:"$Sreact.suspense"
+f:"ViewportBoundary"
+10:I[97367,["$4"],"$f"]
+11:"MetadataBoundary"
+12:I[97367,["$4"],"$11"]
+13:I[27201,["$4"],"IconMark"]
+8:X
+8:C
+9:X
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","div",null,{"className":"px-4 py-14","children":["$","div",null,{"className":"mx-auto max-w-3xl","children":[["$","h1",null,{"className":"mb-2 text-3xl font-bold","children":"Privacy Policy"}],["$","p",null,{"className":"mb-8 text-sm text-muted-foreground","children":"Last updated: November 2026"}],["$","div",null,{"className":"space-y-8 text-muted-foreground","children":[["$","section",null,{"children":[["$","h2",null,{"className":"mb-3 text-xl font-semibold text-foreground","children":"Client-Side Processing"}],["$","p",null,{"className":"leading-relaxed","children":["All tools on ","Geotag Photo Online"," process your files entirely in your web browser using JavaScript. ",["$","strong",null,{"className":"text-foreground","children":"No files are uploaded to our servers."}]," Your photos and images never leave your device."]}]]}],["$","section",null,{"children":[["$","h2",null,{"className":"mb-3 text-xl font-semibold text-foreground","children":"Data We Collect"}],["$","p",null,{"className":"leading-relaxed","children":"We use basic analytics (page views, tool usage counts) to understand how our tools are used. We do not collect, store, or process any of your photos, images, or their metadata."}]]}],["$","section",null,{"children":[["$","h2",null,{"className":"mb-3 text-xl font-semibold text-foreground","children":"Cookies"}],["$","p",null,{"className":"leading-relaxed","children":"We may use essential cookies for site functionality and analytics cookies to understand usage patterns. No advertising or tracking cookies are used."}]]}],["$","section",null,{"children":[["$","h2",null,{"className":"mb-3 text-xl font-semibold text-foreground","children":"Third-Party Services"}],["$","ul",null,{"className":"list-disc space-y-2 pl-6 leading-relaxed","children":["$","li",null,{"children":[["$","strong",null,{"className":"text-foreground","children":"OpenStreetMap:"}]," Used for map displays and address geocoding in our geotag tools. OpenStreetMap may log API requests."]}]}]]}],["$","section",null,{"children":[["$","h2",null,{"className":"mb-3 text-xl font-semibold text-foreground","children":"Contact"}],["$","p",null,{"className":"leading-relaxed","children":["For privacy questions, email us at"," ",["$","a",null,{"href":"mailto:info@geotagphotoonline.com","className":"text-primary hover:underline","children":"info@geotagphotoonline.com"}]]}]]}]]}]]}]}],null,["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]]}],"p":"$@e","v":null,"s":"$9"}}]]
+2:[["children",{"s":"privacy-policy","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"fr","s":[]},"h":32,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L10",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L12",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$c",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Privacy Policy | Geotag Photo Online"}],["$","meta","1",{"name":"description","content":"Privacy Policy for Geotag Photo Online"}],["$","meta","2",{"name":"keywords","content":"geotag photos,EXIF viewer,remove EXIF data,image converter,photo location,GPS metadata"}],["$","meta","3",{"name":"google-site-verification","content":"JspM7BUx0DuJJ3jGLLl7lkeqV3oTJp_vLia0PjfxnsI"}],["$","link","4",{"rel":"icon","href":"/icon.svg?icon.342j1_c9xemfy.svg","sizes":"any","type":"image/svg+xml"}],["$","$L13","5",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@14","v":null,"s":"$9"}},"a":"$@15","u":"$@16","b":"VC0c835rB72SHtaJwBkR6"}
+d:null
+16:true
+9:300
+9:C
+15:0
+7:"$undefined"
+14:"$undefined"
+e:"$undefined"

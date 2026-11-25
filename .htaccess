@@ -3,18 +3,29 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Old flat converter URLs -> new nested URLs (301 redirects)
-RewriteRule ^jpg-to-png/?$ /image-converter/jpg-to-png/ [L,R=301]
-RewriteRule ^png-to-jpg/?$ /image-converter/png-to-jpg/ [L,R=301]
-RewriteRule ^webp-to-png/?$ /image-converter/webp-to-png/ [L,R=301]
-RewriteRule ^webp-to-jpg/?$ /image-converter/webp-to-jpg/ [L,R=301]
-RewriteRule ^png-to-webp/?$ /image-converter/png-to-webp/ [L,R=301]
-RewriteRule ^jpg-to-webp/?$ /image-converter/jpg-to-webp/ [L,R=301]
-RewriteRule ^heic-to-jpg/?$ /image-converter/heic-to-jpg/ [L,R=301]
-RewriteRule ^psd-to-png/?$ /image-converter/psd-to-png/ [L,R=301]
-RewriteRule ^svg-to-png/?$ /image-converter/svg-to-png/ [L,R=301]
+# Root redirect to /en/
+RewriteRule ^$ /en/ [L,R=301]
 
-# Add trailing slash (match WordPress URL pattern)
+# Old flat converter URLs -> new locale-prefixed nested URLs (301 redirects)
+RewriteRule ^jpg-to-png/?$ /en/image-converter/jpg-to-png/ [L,R=301]
+RewriteRule ^png-to-jpg/?$ /en/image-converter/png-to-jpg/ [L,R=301]
+RewriteRule ^webp-to-png/?$ /en/image-converter/webp-to-png/ [L,R=301]
+RewriteRule ^webp-to-jpg/?$ /en/image-converter/webp-to-jpg/ [L,R=301]
+RewriteRule ^png-to-webp/?$ /en/image-converter/png-to-webp/ [L,R=301]
+RewriteRule ^jpg-to-webp/?$ /en/image-converter/jpg-to-webp/ [L,R=301]
+RewriteRule ^heic-to-jpg/?$ /en/image-converter/heic-to-jpg/ [L,R=301]
+RewriteRule ^psd-to-png/?$ /en/image-converter/psd-to-png/ [L,R=301]
+RewriteRule ^svg-to-png/?$ /en/image-converter/svg-to-png/ [L,R=301]
+
+# Redirect non-locale page paths to /en/ equivalent
+# Catches old bookmarked URLs like /about/, /geo-tag-checker/, /image-converter/, etc.
+RewriteCond %{REQUEST_URI} !^/(en|es|de|fr|pt|ja)(/|$)
+RewriteCond %{REQUEST_URI} !^/_next/
+RewriteCond %{REQUEST_URI} !\.(html|css|js|json|png|jpg|jpeg|gif|svg|webp|ico|woff2|woff|ttf|xml|txt|map)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ /en/$1 [L,R=301]
+
+# Add trailing slash
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*)$ /$1/ [L,R=301]

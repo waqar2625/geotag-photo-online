@@ -1,0 +1,31 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/1e8blic1djf2d.js"
+5:I[39756,["$4"],"default"]
+6:I[37457,["$4"],"default"]
+b:"/_next/static/chunks/2i3nwwhy2ia4-.js"
+c:"/_next/static/chunks/2u35i-qmgyqu2.js"
+d:I[22016,["$4","$b","$c"],""]
+e:I[5500,["$4","$b","$c"],"Image"]
+f:I[5014,["$4","$b","$c"],"default"]
+10:I[97367,["$4"],"OutletBoundary"]
+11:"$Sreact.suspense"
+14:"ViewportBoundary"
+15:I[97367,["$4"],"$14"]
+16:"MetadataBoundary"
+17:I[97367,["$4"],"$16"]
+18:I[27201,["$4"],"IconMark"]
+8:X
+8:C
+9:X
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","div",null,{"className":"px-4 py-14","children":["$","div",null,{"className":"mx-auto max-w-3xl","children":[["$","h1",null,{"className":"mb-8 text-3xl font-bold","children":"Blog"}],["$","div",null,{"className":"space-y-6","children":[["$","article","how-to-remove-exif-data-from-photos",{"className":"flex gap-4 overflow-hidden rounded-xl border border-border p-4 transition-colors hover:bg-muted/50 sm:gap-5 sm:p-5","children":[["$","$Ld",null,{"href":"/how-to-remove-exif-data-from-photos","className":"shrink-0","children":["$","$Le",null,{"src":"/images/blog/photo-exif-metadata-removal.webp","alt":"How to remove EXIF metadata from photos","width":240,"height":135,"className":"h-24 w-36 rounded-lg object-cover sm:h-32 sm:w-48"}]}],["$","div",null,{"className":"min-w-0 flex-1","children":[["$","div",null,{"className":"mb-1 flex items-center gap-2 text-sm text-muted-foreground","children":[["$","$Lf",null,{"icon":{"name":"calendar","size":24,"node":[["path",{"d":"M8 2v3","key":"1ioesn"}],["path",{"d":"M16 2v3","key":"otl347"}],["rect",{"x":"3","y":"3","width":"18","height":"18","rx":"2","key":"h1oib"}],["path",{"d":"M3 9h18","key":"1pudct"}]]},"className":"h-3.5 w-3.5 shrink-0"}],"November 4, 2026"]}],["$","h2",null,{"className":"mb-1 text-lg font-semibold leading-snug","children":["$","$Ld",null,{"href":"/how-to-remove-exif-data-from-photos","className":"hover:text-primary","children":"How to Remove EXIF Data from Photos"}]}],["$","p",null,{"className":"mb-2 line-clamp-2 text-sm text-muted-foreground","children":"Learn why you should remove EXIF data before sharing photos online, and how to do it quickly with our free tool."}],["$","$Ld",null,{"href":"/how-to-remove-exif-data-from-photos","className":"inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline","children":["Read more ",["$","$Lf",null,{"icon":{"name":"arrow-right","size":24,"node":[["path",{"d":"M5 12h14","key":"1ays0h"}],["path",{"d":"m12 5 7 7-7 7","key":"xquz4c"}]]},"className":"h-3.5 w-3.5"}]]}]]}]]}]]}]]}]}],[["$","script","script-0",{"src":"/_next/static/chunks/2u35i-qmgyqu2.js","async":true}]],["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}],"p":"$@13","v":null,"s":"$9"}}]]
+2:[["children",{"s":"blog","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"es","s":[]},"h":32,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L15",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L17",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$11",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Blog | Geotag Photo Online"}],["$","meta","1",{"name":"description","content":"Tips and guides about photo metadata, geotagging, and image conversion from Geotag Photo Online."}],["$","meta","2",{"name":"keywords","content":"geotag photos,EXIF viewer,remove EXIF data,image converter,photo location,GPS metadata"}],["$","meta","3",{"name":"google-site-verification","content":"JspM7BUx0DuJJ3jGLLl7lkeqV3oTJp_vLia0PjfxnsI"}],["$","link","4",{"rel":"icon","href":"/icon.svg?icon.342j1_c9xemfy.svg","sizes":"any","type":"image/svg+xml"}],["$","$L18","5",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@19","v":null,"s":"$9"}},"a":"$@1a","u":"$@1b","b":"VC0c835rB72SHtaJwBkR6"}
+12:null
+1b:true
+9:300
+9:C
+1a:0
+7:"$undefined"
+19:"$undefined"
+13:"$undefined"
